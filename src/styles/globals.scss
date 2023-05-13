@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 1rem 2rem;
+	font-family: 'Open Sans', sans-serif;
+	background:
+		radial-gradient(farthest-side at -33.33% 50%, #0000 52%, #ffffff 54% 57%, #0000 59%) 0 calc(40px/2),
+		radial-gradient(farthest-side at 50% 133.33%, #0000 52%, #ffffff 54% 57%, #0000 59%) calc(40px/2) 0,
+		radial-gradient(farthest-side at 133.33% 50%, #0000 52%, #ffffff 54% 57%, #0000 59%),
+		radial-gradient(farthest-side at 50% -33.33%, #0000 52%, #ffffff 54% 57%, #0000 59%),
+		rgba(221, 245, 255, 0.76);
+	background-size: calc(40px/4.667) 40px, 40px calc(40px/4.667);
+
+}
+
+a {
+	text-decoration: none;
+}

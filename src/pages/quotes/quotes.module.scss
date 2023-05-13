@@ -1,0 +1,40 @@
+.quotesSection {
+	width: 100%;
+	padding: 2rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+.quote {
+	margin: 1.5rem;
+	padding: 1rem;
+	border: 1px solid gray;
+	border-radius: 20px;
+	position: relative;
+	max-width: 600px;
+	transition: 500ms ease;
+	cursor: pointer;
+
+
+	&:hover {
+		transform: translateY(-1.5px);
+		border-color: rgba(0, 0, 139, 0.4);
+		background-color: rgba(221, 245, 255, 0.8);
+		color: rgba(0, 0, 139, 0.9);
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	}
+
+	&__id {
+		position: absolute;
+		top: -15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 30px;
+		user-select: none;
+		aspect-ratio: 1/1;
+		border-radius: 50%;
+		background-color: rgb(255, 112, 112);
+	}
+}

@@ -1,0 +1,30 @@
+.home {
+	padding: 2rem;
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	gap: 2rem;
+
+	&__title {
+		margin: 0.5rem;
+		padding: 1rem;
+		transition: 500ms ease;
+		cursor: pointer;
+		user-select: none;
+
+		&:hover {
+			transform: translateY(-1.5px);
+			border-radius: 15px;
+			border-color: rgba(0, 0, 139, 0.4);
+			background-color: rgba(221, 245, 255, 0.8);
+			color: rgba(0, 0, 139, 0.9);
+			box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+		}
+	}
+
+	&__text {
+		max-width: 800px;
+		text-align: justify;
+	}
+}

@@ -1,20 +1,29 @@
-.quotesSection {
+.products {
 	width: 100%;
-	padding: 2rem;
+	padding: 1rem;
 	display: flex;
-	flex-flow: column nowrap;
 	justify-content: center;
+	gap: 2rem;
+	flex-wrap: wrap;
 }
 
-.quote {
-	margin: 1.5rem auto;
+.card {
+	position: relative;
+	width: 450px;
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
 	padding: 1rem;
 	border: 1px solid gray;
 	border-radius: 20px;
-	position: relative;
-	width: 600px;
-	transition: 500ms ease;
+	transition: all 500ms ease;
 	cursor: pointer;
+
+	&__imagecont {
+		border-radius: 20px;
+		overflow: hidden;
+		width: 250px;
+	}
 
 	&:hover {
 		transform: translateY(-1.5px);
@@ -26,7 +35,7 @@
 
 	&__id {
 		position: absolute;
-		top: -15px;
+		top: -20px;
 		display: flex;
 		justify-content: center;
 		align-items: center;

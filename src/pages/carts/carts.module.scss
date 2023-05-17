@@ -1,20 +1,33 @@
-.quotesSection {
+.carts {
 	width: 100%;
 	padding: 2rem;
 	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
+	flex-direction: column;
+	gap: 2rem;
 }
 
-.quote {
-	margin: 1.5rem auto;
+.row {
 	padding: 1rem;
-	border: 1px solid gray;
-	border-radius: 20px;
+	width: 100%;
+	display: flex;
+	gap: 50px;
+	overflow-x: scroll;
+
+	&::-webkit-scrollbar {
+		display: none;
+		cursor: ew-resize;
+		height: 3px;
+	}
+}
+
+.product {
 	position: relative;
-	width: 600px;
+	min-width: 400px;
+	padding: 1rem;
+	border: 1px solid lightgray;
 	transition: 500ms ease;
 	cursor: pointer;
+	border-radius: 15px;
 
 	&:hover {
 		transform: translateY(-1.5px);
